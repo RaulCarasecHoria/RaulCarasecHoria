@@ -1,0 +1,7 @@
+Name       	Attack      Health
+Drac      	 4           5
+Fata pădurii     6           3
+Iala             3           7
+Strigoi          2           8
+Urs              5           5
+Zmeu             4           7    

@@ -1,0 +1,19 @@
+.grid{
+
+
+    
+
+    display: grid;
+    
+    gap: 5.85em;
+    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  
+  .grid > button{
+    width: 100%;
+    text-align: center;
+    
+    
+  }

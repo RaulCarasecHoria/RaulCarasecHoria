@@ -1,0 +1,174 @@
+.Icon {
+
+
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\card_border.jpeg);
+
+    /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    background-size: contain; /* scales the image */
+    width: 105px;
+    height: 137px;
+    cursor:pointer;
+    border: none;
+    /*///////////*/
+
+   
+    box-shadow: 0 0 0 1px black;
+   
+}
+
+
+
+.card_border {
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\card_border.jpeg);
+    /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    background-size: contain; /* scales the image */
+    width: 105px;
+    height: 137px;
+    cursor:pointer;
+    border: none;
+    /*///////////*/
+
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+
+.drac_art {
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png);
+    /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    background-size: contain; /* scales the image */
+    width: 105px;
+    height: 137px;
+    cursor:pointer;
+    border: none;
+    /*///////////*/
+
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+
+.fataPadurii_art {
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\fataPadurii_art.png);
+    /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    background-size: contain; /* scales the image */
+    width: 105px;
+    height: 137px;
+    cursor:pointer;
+    border: none;
+    /*///////////*/
+
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+
+.iala_art {
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\iala_art.png);
+    /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    background-size: contain; /* scales the image */
+    width: 105px;
+    height: 137px;
+    cursor:pointer;
+    border: none;
+    /*///////////*/
+
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+
+.zmeu_art {
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\zmeu_art.png);
+    /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    background-size: contain; /* scales the image */
+    width: 105px;
+    height: 137px;
+    cursor:pointer;
+    border: none;
+    /*///////////*/
+
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+
+.urs_art {
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\urs_art.png);
+    /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    background-size: contain; /* scales the image */
+    width: 105px;
+    height: 137px;
+    cursor:pointer;
+    border: none;
+    /*///////////*/
+
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+
+.strigoi_art {
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\strigoi_art.png);
+    /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    background-size: contain; /* scales the image */
+    width: 105px;
+    height: 137px;
+    cursor:pointer;
+    border: none;
+    /*///////////*/
+
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    box-shadow: 0 0 0 1px black;
+    margin-bottom: 50px;
+    margin-right: 15px;
+}
+
+
+.damage {
+
+    font-size: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+color: black;
+}
+
+
+
+.health {
+
+    font-size: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   
+
+color: black;
+}
+
+.mana{
+
+    
+    position: absolute;
+    top: 0;
+    left: 10;
+color: black;
+
+
+}
+
+
+.Icon:hover {
+    
+
+    opacity: .5;
+
+  }

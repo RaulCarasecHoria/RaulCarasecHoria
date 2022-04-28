@@ -1,0 +1,24 @@
+.cards{
+
+
+    display: flex;
+    flex-direction: row;
+
+
+    position:absolute;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+
+    top: 35%;
+    left: 50%;
+    right: 50%;
+
+
+    color: red;
+}
+
+
+
+
+

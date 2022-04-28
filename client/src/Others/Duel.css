@@ -1,0 +1,67 @@
+#hand_top{
+    display: flex;
+    flex-direction: row;
+    
+
+
+    position:absolute;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+
+    top: 15%;
+    left: 50%;
+    right: 50%;
+
+   
+    color: red;
+}
+
+#table_top{
+    display: flex;
+    flex-direction: row;
+
+
+    position:absolute;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+
+    top: 35%;
+    left: 50%;
+    right: 50%;
+
+
+    color: red;
+}
+
+
+#table_bottom{
+    display:  flex;
+        position:absolute;
+        bottom: 0px;
+        align-items: center;
+        justify-content: center;
+    
+        top: 30%;
+        left: 50%;
+        right: 50%;
+        
+    
+        color: blue;
+    }
+
+#hand_bottom{
+display:  flex;
+    position:absolute;
+    bottom: 0px;
+    align-items: center;
+    justify-content: center;
+
+    top: 75%;
+    left: 50%;
+    right: 50%;
+    
+
+    color: blue;
+}
