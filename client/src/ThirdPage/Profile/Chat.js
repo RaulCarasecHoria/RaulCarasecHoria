@@ -13,18 +13,24 @@ class Chat extends React.Component {
       this.loggedId=0; //id conectat 
 
       this.string= {value: ""};
+    
   
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.handleConnection = this.handleConnection.bind(this);
+  
 
       this.updateChatString = this.updateChatString.bind(this);
       this.getChatString = this.getChatString.bind(this);
+
+      this.componentDidMount = this.componentDidMount.bind(this);
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
     }
 
 
     componentDidMount() {
-      this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
+      this.handleConnection();
+      this.interval = setInterval(() => (this.getChatString(),this.forceUpdate()),1000)
     }
     componentWillUnmount() {
       clearInterval(this.interval);
@@ -35,7 +41,7 @@ class Chat extends React.Component {
     handleChange(event) {
         this.setState({value: event.target.value});
 
-        this.forceUpdate();
+        
     }
   
     handleSubmit(event) {
@@ -106,8 +112,6 @@ Axios.post("http://localhost:3001/server/getChatString",{Player1_id: String(this
       return (
           <div>
 
-            <button style={{position: "absolute", right: 50, top: 50 }} onClick={this.handleConnection}>Connect to Chat</button>
-            <button style={{position: "absolute", right: 50, top: 70 }} onClick={this.getChatString}>Refresh</button>
 
 <textarea style={{width: "200px",height: "600px"}} value={this.string.value}/>
 

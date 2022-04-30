@@ -222,6 +222,26 @@ res.send(result[0].chat);
 });
 
 
+app.post("/server/getAllPlayers",(req,res)=>{
+
+
+  const username=req.body.Username;
+ 
+  console.log("am primit post chat conectare "+username);
+  
+  const sqlSelect = "SELECT id_Player,name FROM player;";
+  db.query(sqlSelect,(err, result)=>{
+   
+    
+
+res.send(result.filter(aux => aux.name != username));
+
+});
+
+
+});
+
+
 
 app.post("/server/updateChatString",(req,res)=>{
 

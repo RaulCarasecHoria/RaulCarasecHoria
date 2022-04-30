@@ -1,0 +1,15 @@
+.chat{
+    position: absolute;
+    left:    0;
+    bottom:   0;
+}
+
+.Friends{
+
+display: flex;
+flex-direction: column;
+float: right;
+align-items: center;
+
+
+}

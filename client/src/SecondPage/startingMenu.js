@@ -4,7 +4,7 @@ import "./startingMenu.css";
 import Matchmaking from "../ThirdPage/Matchmaking";
 import Options from "../ThirdPage/Options";
 import Credits from "../ThirdPage/Credits";
-import Profile from "../ThirdPage/Profile";
+import Profile from "../ThirdPage/Profile/Profile";
 import Collection from "../ThirdPage/Collection";
 import Login from "../FirstPage/Login";
 
