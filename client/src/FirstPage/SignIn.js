@@ -37,7 +37,8 @@ alert("EROARE trimitere post!")});
       
         <div className="Inregistrare"> 
       
-          <h1 className="Title">INREGISTRARE</h1>
+      <center><h1 className="Title_SignIn">INREGISTRARE</h1></center>
+          
 
           <div className="SignIn">
           <label>Username</label>

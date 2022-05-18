@@ -14,7 +14,7 @@ class Chat extends React.Component {
 
       this.string= {value: ""};
     
-  
+      console.log("id conectat: "+this.props.connectedId);
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.handleConnection = this.handleConnection.bind(this);
@@ -29,8 +29,12 @@ class Chat extends React.Component {
 
 
     componentDidMount() {
+      
+      
       this.handleConnection();
-      this.interval = setInterval(() => (this.getChatString(),this.forceUpdate()),1000)
+      this.interval = setInterval(() => ( this.getChatString(),this.forceUpdate(),this.connectWith=this.props.connectedId ) ,1000)
+
+      
     }
     componentWillUnmount() {
       clearInterval(this.interval);
@@ -69,11 +73,10 @@ console.log("am apasat "+this.props.name);
     //cautam toate dm-urile playerului
 
 //in functie de ce buton apasa se face conectiunea cu unu dintre playeri.(buton cu numele celorlalti)
-if(this.props.name === "raul"){
-  this.connectWith=2;
-}
-else 
-this.connectWith=1;
+
+  
+
+
 //am stabilit conexiunea
 
 

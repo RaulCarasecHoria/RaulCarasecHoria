@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Login.css"
+import "./Login.css";
 import Axios from "axios";
 
 //pg 2
@@ -60,7 +60,9 @@ const tryToLogin = (e) => {
 return(
   <div className="Logare">
 
-    <h1 className="Title">LOGIN</h1>
+<center><h1 className="Title_Login">LOGIN</h1></center>
+
+    
 
     <div className="Login">
 

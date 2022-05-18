@@ -21,6 +21,7 @@
 .card_border {
     background: url(C:\Users\Hp\cardgame-app\client\public\art\card_border.jpeg);
     /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
+    
     background-size: contain; /* scales the image */
     width: 105px;
     height: 137px;
@@ -35,7 +36,7 @@
 }
 
 .drac_art {
-    background: url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png);
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\sprite_transparent0.png),url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png);
     /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
     background-size: contain; /* scales the image */
     width: 105px;
@@ -51,7 +52,7 @@
 }
 
 .fataPadurii_art {
-    background: url(C:\Users\Hp\cardgame-app\client\public\art\fataPadurii_art.png);
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\sprite_transparent0.png),url(C:\Users\Hp\cardgame-app\client\public\art\fataPadurii_art.png);
     /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
     background-size: contain; /* scales the image */
     width: 105px;
@@ -67,7 +68,7 @@
 }
 
 .iala_art {
-    background: url(C:\Users\Hp\cardgame-app\client\public\art\iala_art.png);
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\sprite_transparent0.png),url(C:\Users\Hp\cardgame-app\client\public\art\iala_art.png);
     /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
     background-size: contain; /* scales the image */
     width: 105px;
@@ -83,7 +84,7 @@
 }
 
 .zmeu_art {
-    background: url(C:\Users\Hp\cardgame-app\client\public\art\zmeu_art.png);
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\sprite_transparent0.png),url(C:\Users\Hp\cardgame-app\client\public\art\zmeu_art.png);
     /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
     background-size: contain; /* scales the image */
     width: 105px;
@@ -99,7 +100,7 @@
 }
 
 .urs_art {
-    background: url(C:\Users\Hp\cardgame-app\client\public\art\urs_art.png);
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\sprite_transparent0.png),url(C:\Users\Hp\cardgame-app\client\public\art\urs_art.png);
     /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
     background-size: contain; /* scales the image */
     width: 105px;
@@ -115,7 +116,7 @@
 }
 
 .strigoi_art {
-    background: url(C:\Users\Hp\cardgame-app\client\public\art\strigoi_art.png);
+    background: url(C:\Users\Hp\cardgame-app\client\public\art\sprite_transparent0.png),url(C:\Users\Hp\cardgame-app\client\public\art\strigoi_art.png);
     /*url(C:\Users\Hp\cardgame-app\client\public\art\drac_art.png) no-repeat*/
     background-size: contain; /* scales the image */
     width: 105px;
@@ -167,8 +168,7 @@ color: black;
 
 
 .Icon:hover {
-    
-
     opacity: .5;
-
   }
+
+  

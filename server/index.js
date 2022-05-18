@@ -207,14 +207,25 @@ res.send(String(loggedId));
 app.post("/server/getChatString",(req,res)=>{
 
 
-  const Id_Request=req.body.Player1_id;
-  const Id_ToConnect=req.body.Player2_id;
+  var Id_Request=req.body.Player1_id;
+  var Id_ToConnect=req.body.Player2_id;
+
+if(Id_ToConnect == 0)//caz in care nu suntem conectati cu nimeni
+ Id_Request=0;
+
+
   console.log("am primit post chat conectare "+Id_Request+" - "+Id_ToConnect);
   
   const sqlSelect = "SELECT chat FROM direct_messages WHERE (id_Player1=? AND id_Player2=?) OR (id_Player1=? AND id_Player2=?)";
   db.query(sqlSelect,[Id_Request,Id_ToConnect,Id_ToConnect,Id_Request],(err, result)=>{
-   
+
+   try{
 res.send(result[0].chat);
+   }
+   catch(error){
+    const sqlInsert = "INSERT INTO direct_messages (id_Player1,id_Player2,chat) VALUES (?,?,?);"
+    db.query(sqlInsert,[Id_Request,Id_ToConnect,""],(err,res)=>{})
+   }
 
 });
 
@@ -227,14 +238,14 @@ app.post("/server/getAllPlayers",(req,res)=>{
 
   const username=req.body.Username;
  
-  console.log("am primit post chat conectare "+username);
+  //console.log("am primit post chat conectare "+username);
   
   const sqlSelect = "SELECT id_Player,name FROM player;";
   db.query(sqlSelect,(err, result)=>{
    
     
 
-res.send(result.filter(aux => aux.name != username));
+res.send(result.filter(aux => aux.name != username && aux.name !="inexistent"));
 
 });
 

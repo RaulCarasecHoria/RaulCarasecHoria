@@ -8,6 +8,7 @@ import FirstPage from './FirstPage/FirstPage';
 //import Duel from './Others/Duel';
 
 import reportWebVitals from './reportWebVitals';
+import StartingMenu from './SecondPage/startingMenu';
 import Collection from './ThirdPage/Collection';
 import Options from './ThirdPage/Options';
 
@@ -21,7 +22,7 @@ if (pass === "parola123") {
 
   ReactDOM.render(
       
-  <Options />,
+  <StartingMenu />,
     
     document.getElementById('root')
   );
